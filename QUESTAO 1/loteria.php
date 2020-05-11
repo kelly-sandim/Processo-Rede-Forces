@@ -9,9 +9,10 @@ function loteria() {
     $numerosValidos = range(1, 50);
     shuffle($numerosValidos);
     for($i = 0; $i < 6; $i++) {
-        $numerosSorteados[i] = $numerosValidos[i];
+        $numerosSorteados[$i] = $numerosValidos[$i];
     } 
-    return sort($numerosSorteados);
+    sort($numerosSorteados);
+    return $numerosSorteados;
 }
 
 ?>
