@@ -13,9 +13,6 @@ if(isset($_POST['save'])){
     } else {
         echo "Possível ataque de upload de arquivo!\n";
     }
-
-    echo 'Aqui está mais informações de debug:';
-    print_r($_FILES);
 }
 
 else {
@@ -35,6 +32,11 @@ else {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Resultado</title>
+    <style>
+        div.input-group {
+            height: 350px;
+        }
+    </style>
 </head>
 <body>
     <h1>Resultado</h1>
