@@ -7,7 +7,10 @@
 include("../QUESTAO 3/lerTexto.php");
 $leitor = new leitorTexto();
 if(isset($_POST['save'])){
-    $uploadDir = "../QUESTAO 3/uploads/";    
+    $uploadDir = "../QUESTAO 3/uploads/";
+    if (!file_exists($uploadDir)) {
+        mkdir($uploadDir, 0777);        
+    }    
     $uploadFile = $uploadDir . basename($_FILES['userfile']['name']);
 
     if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadFile)) {
