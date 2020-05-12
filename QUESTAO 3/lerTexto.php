@@ -6,23 +6,25 @@
  * conteúdo do arquivo lido, um método para carregar o
  * arquivo e outro para visualizar o atributo.
  */
-class leitorTexto {
-    /**
-     * Holds a private string
-     * @var string
-     */
+class leitorTexto {    
     private $conteudoArquivo = '';
   
     /**
      * Sets the private string variable
      */
-    public function setConteudo() {
-      $this->string = 'This string is accessible by other methods';
-      $conteudoArquivo = 'This string is only accessible from within this method';
+    public function setConteudo($filePath) {
+      #Abrir arquivo      
+      $this->conteudoArquivo = file_get_contents($filePath);
     }
 
     public function getConteudo() {
-
+      return $this->conteudoArquivo;
     }  
 }
+
+
+//Apenas para testar
+// $leitor = new leitorTexto();
+// $leitor->setConteudo("./uploads/teste.txt");
+// echo ($leitor->getConteudo());
 ?>
