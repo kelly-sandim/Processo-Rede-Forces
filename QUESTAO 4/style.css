@@ -1,5 +1,10 @@
 body {
     padding: 20px;
-    background-color: #eeeeee;
+    background-color: #dfdfdf;
     color: #424242;
+}
+
+section.upload-arquivo, section.resultado-leitura {
+    background-color: #ffffff;
+    padding: ;
 }
