@@ -24,7 +24,17 @@ $leitor = new leitorTexto();
     <title>Leitor de Arquivos</title>
 </head>
 <body>
-    <h1>Faça upload de um arquivo e veja o resultado abaixo!</h1>
-    
+    <h1>Upload de arquivos</h1>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Faça upload de um arquivo e veja o resultado abaixo!</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <h3>Resultado</h3>
+    <div class="input-group">        
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
 </body>
 </html>
