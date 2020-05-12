@@ -5,8 +5,7 @@
  * submeter seja visualizado o conteúdo
  */
 
-include("../QUESTAO 3/lerTexto.php");
-$leitor = new leitorTexto();
+
 
 ?>
 
@@ -25,16 +24,13 @@ $leitor = new leitorTexto();
 </head>
 <body>
     <h1>Upload de arquivos</h1>
-    <form>
+    <form enctype="multipart/form-data" action="resultadoTexto.php" method="POST">
         <div class="form-group">
             <label for="exampleFormControlFile1">Faça upload de um arquivo e veja o resultado abaixo!</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <input type="file" name="userfile" class="form-control-file" id="userfile">
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <input type="submit" class="btn btn-primary" name="save" value="Enviar">
     </form>
-    <h3>Resultado</h3>
-    <div class="input-group">        
-        <textarea class="form-control" aria-label="With textarea"></textarea>
-    </div>
+    
 </body>
 </html>
