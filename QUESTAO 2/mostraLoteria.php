@@ -25,11 +25,49 @@ $apostaTres = loteria();
 
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>  
     <title>Resultado Mega-Sena</title>
+    <style>
+        body {
+            background-color: #55c993;
+            padding: 45px;
+        }
+
+        table {
+            background-color: #585858;
+            color: white;            
+            text-align: center;
+            margin-left: auto; 
+            margin-right:auto;
+        }
+
+        div#resultados {           
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 25px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 55%;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+        
+    </style>
 </head>
 <body>
-    <div class="row col-md-12">
+    <img src="./assets/images/mega-sena.png" alt="Logo da Mega Sena">
+    <h1>Resultados</h1>
+    <div id="resultados" class="row col-md-12">
         <div class="column col-md-4">
-            <h1>Aposta 1</h1>
+            <h3>Aposta 1</h3>
             <table>
                 <tr>
                     <?php 
@@ -100,7 +138,7 @@ $apostaTres = loteria();
             </table>
         </div>
         <div class="column col-md-4">
-            <h1>Aposta 2</h1>
+            <h3>Aposta 2</h3>
             <table>
                 <tr>
                     <?php 
@@ -170,7 +208,7 @@ $apostaTres = loteria();
             </table>
         </div>
         <div class="column col-md-4">
-            <h1>Aposta 3</h1>
+            <h3>Aposta 3</h3>
             <table>
                 <tr>
                     <?php 
